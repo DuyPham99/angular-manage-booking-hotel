@@ -1,0 +1,12 @@
+<div class="sidebar" id="sidebar">
+    <a href="" style="font-size: 17px;">user_name</a>
+    <a [ngClass]="{active: selected === 'user-manage-page'}" id="btn-manage-user" 
+    (click)="onSelect('user-manage-page')">
+    <i class="fa fa-user"
+            aria-hidden="true"></i></a>
+    <a (click)="onSelect('booking-calender-page')" [ngClass]="{active: selected === 'booking-calender-page'}">
+        <i class="fa fa-calendar" aria-hidden="true"></i></a>
+    <a href="#contact"><i class="fa fa-pie-chart" aria-hidden="true"></i></a>
+</div>
+
+
